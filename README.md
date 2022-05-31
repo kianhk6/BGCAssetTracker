@@ -13,12 +13,14 @@ scan the equipment to sign it back into the inventory. The app will then automat
 the inventory. Equipment Managers will also be able to add, edit, and delete equipment entries. There will also be Admin users who have all the same abilities 
 as the Equipment Managers, but they will also be able to create, edit, and delete user accounts.
 
+
 Customer
 
 Our customer is BGC Engineering. They are an international consulting firm that applies professional services in the applied earth sciences. 
 Currently they’re using a generic app. Their current solution does not allow them to organise their equipment by the various locations (Vancouver, Toronto, and Quebec),
 and it does not have a way for users to request equipment that is stored at different locations. By having an in-app feature to request equipment, 
 this can speed up workflow and users can see the status of their request (pending, approved, denied).
+
 
 Competitive Analysis
 
