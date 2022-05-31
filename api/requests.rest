@@ -1,0 +1,37 @@
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+{
+    "name": "bobq1",
+    "email": "bobq1@gmail.com",
+    "password": "bobq1"
+
+}
+
+###
+DELETE  http://localhost:5000/api/users/9d31c19f-841e-416b-b494-98e548950528
+#to see all users 
+#if it says jwt expired, send request from ^ and copy/paste access token below
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjlkMzFjMTlmLTg0MWUtNDE2Yi1iNDk0LTk4ZTU0ODk1MDUyOCIsInN0YXR1cyI6ImIiLCJpYXQiOjE2NDY2MTIyMzR9.RSmmo0bFwJq9Nn7KUtdumx345e8KmrLLjp1Gm3nAyO0
+
+
+####
+
+POST http://localhost:5000/api/refresh
+Content-Type: application/json
+
+{
+    "token" :"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjlkMzFjMTlmLTg0MWUtNDE2Yi1iNDk0LTk4ZTU0ODk1MDUyOCIsInN0YXR1cyI6ImIiLCJpYXQiOjE2NDY2MTIyNjN9.36exOERZzjLMtSnYOLywpysTvE8Uc7LAE9WM0R-WudM"
+}
+
+#####
+POST http://localhost:5000/api/logout
+
+
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjlkMzFjMTlmLTg0MWUtNDE2Yi1iNDk0LTk4ZTU0ODk1MDUyOCIsInN0YXR1cyI6ImIiLCJpYXQiOjE2NDY2MTIyMzR9.RSmmo0bFwJq9Nn7KUtdumx345e8KmrLLjp1Gm3nAyO0
+
+Content-Type: application/json
+
+{
+    "token" :"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjlkMzFjMTlmLTg0MWUtNDE2Yi1iNDk0LTk4ZTU0ODk1MDUyOCIsInN0YXR1cyI6ImIiLCJpYXQiOjE2NDY2MTIyNjN9.36exOERZzjLMtSnYOLywpysTvE8Uc7LAE9WM0R-WudM"
+}

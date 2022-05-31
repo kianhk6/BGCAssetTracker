@@ -1,0 +1,9 @@
+{
+    "equipment": [{
+        "Name": "My first blog",
+        "SignedOut": "This is the body",
+        "User": "Mario",
+        "ID": 1,
+        "Status": "Admin"
+    }]
+}
